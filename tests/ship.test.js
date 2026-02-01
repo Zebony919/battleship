@@ -6,7 +6,7 @@ test("Ship class creation", () => {
     const ship = new Ship(4);
     assert.strictEqual(ship.length, 4);
     assert.strictEqual(ship.hits, 0);
-    assert.strictEqual(ship.isSunk(), false);
+    assert.strictEqual(ship.isSunk, false);
 })
 
 test("Ship hit method", () => {
@@ -19,5 +19,5 @@ test("Ship isSunk method", () => {
     const ship = new Ship(2);
     ship.hit();
     ship.hit();
-    assert.strictEqual(ship.isSunk(), true);
+    assert.strictEqual(ship.isSunk, true);
 })

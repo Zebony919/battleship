@@ -4,6 +4,4 @@ import { loadInitialPage, loadPlayerBoard } from "./userInterface.js";
 
 console.log("Webpack is working!");
 
-
-
 loadInitialPage();

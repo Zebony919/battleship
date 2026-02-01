@@ -30,7 +30,7 @@ h1 {
     gap: 20px;
 }
 
-/* User Input for Name */
+/* User Input for Name Page*/
 .nameBody {
     height: 300px;
     width: 600px;
@@ -74,8 +74,8 @@ h1 {
 
 .player1Board,
 .player2Board {
-    height: 600px;
-    width: 600px;
+    height: 500px;
+    width: 500px;
     background-color: rgb(145, 145, 145);
     border: 2px solid black;
     display: grid;
@@ -85,15 +85,98 @@ h1 {
     padding: 10px;
 }
 
-.square {
-    height: 50px;
-    width: 50px;
-    background-color: white;
-}
-
 .playerNames {
     font-size: 30px;
     color: white;
     display: flex;
     gap: 530px;
+}
+
+/* Ship placement */
+.square {
+    background-color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.square:hover {
+    background-color: #f0f0f0;
+}
+
+.ship-preview {
+    background-color: rgba(0, 128, 255, 0.3) !important;
+    border: 2px solid blue;
+}
+
+.ship-preview-invalid {
+    background-color: rgba(255, 0, 0, 0.3) !important;
+    border: 2px solid red;
+}
+
+.ship-placed {
+    background-color: #4CAF50 !important;
+    border: 2px solid darkgreen;
+}
+
+.shipSelection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.ship-button {
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.ship-button.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.square.hit {
+    background-color: #ff4444 !important;
+    color: white;
+    font-size: 24px;
+}
+
+.square.miss {
+    background-color: #4444ff !important;
+    color: white;
+    font-size: 24px;
+}
+
+.shipButton:disabled,
+.shipButton.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #ccc;
+}
+
+.startGameButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.startGameButton:hover {
+    background-color: #45a049;
+}
+
+.game-status {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border-radius: 5px;
 }

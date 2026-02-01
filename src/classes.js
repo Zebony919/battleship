@@ -55,11 +55,11 @@ export class GameBoard {
 export class Player {
     constructor(type) {
         this.type = type;
-        this.gameBoard = new GameBoard();
+        this.gameboard = new GameBoard();  // ✓ Changed to lowercase
     }
 
     attack(player, coordinates) {
-        player.gameBoard.receiveAttack(coordinates);
+        player.gameboard.receiveAttack(coordinates);  // ✓ Changed to lowercase
     }
 
     makeRandomMove(opponent) {

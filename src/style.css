@@ -23,4 +23,77 @@ h1 {
 
 .main-body {
     background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* User Input for Name */
+.nameBody {
+    height: 300px;
+    width: 600px;
+    background-color: rgb(86, 193, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 5px 5px rgb(5, 5, 5);
+}
+
+.inputBody {
+    display: flex;
+    gap: 10px;
+}
+
+.nameInputTitle {
+    font-size: 50px;
+}
+
+.nameLabel {
+    font-size: 25px;
+}
+
+#nameInput {
+    font-size: 20px;
+}
+
+.nameStartBtn {
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    background-color: green;
+    margin-top: 40px;
+}
+
+/* Boards Page */
+.boards-container {
+    display: flex;
+    gap: 100px;
+}
+
+.player1Board,
+.player2Board {
+    height: 600px;
+    width: 600px;
+    background-color: rgb(145, 145, 145);
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+}
+
+.playerNames {
+    font-size: 30px;
+    color: white;
+    display: flex;
+    gap: 530px;
 }
